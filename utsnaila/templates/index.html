@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Portofolio</h2>
+    <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<!-- Hero -->
+<section class="hero">
+
+    <!-- 🔥 ANIMASI DITARUH DI SINI -->
+    <div class="blob"></div>
+
+    <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+    <div class="hero-content">
+        <img src="{% static 'images/naii.jpeg' %}" class="profile">
+
+        <div class="hero-text">
+            <h1>Nisa Nailassa'adah</h1>
+            <p>Mohon maaf bapak saya sudah pusing terimakasih🙏🏻🙏🏻🙏🏻</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- About -->
+<section id="about" class="animate about-section">
+    <h2>Tentang Saya</h2>
+
+    <div class="about-container">
+        <div class="about-left">
+            <p><strong>Alamat:</strong> Ungaran Barat, Kab.Semarang</p>
+            <p><strong>Pendidikan MI:</strong> Mangunsari 02</p>
+            <p><strong>Pendiddikan MTS:</strong> Miftahul Ulum</p>
+            <p><strong>Pendidikan MA:</strong> Miftahul Ulum</p>
+        </div>
+
+        <div class="about-right">
+            <p>
+                Saya mahasiswa jurusan Sains Data yang tertarik pada analisis data,
+                machine learning, dan visualisasi data untuk menyelesaikan masalah nyata.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Project -->
+<section id="project" class="animate">
+    <h2>Project</h2>
+
+    <div class="card">
+        <h3>Pengembangan Aplikasi Web Midterm Test</h3>
+        <p>Mengimplementasikan structur django dengan web profile yang menarik.</p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="animate">
+    <h2>Kontak</h2>
+    <p>Email: nisanailas13@email.com</p>
+    <p>Instagram: nisa_nailasss</p>
+    <p>No.Hp: +6285640944512</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Portofolio Mahasiswa Sains Data</p>
+</footer>
+
+<!-- Script Animasi -->
+<script>
+const elements = document.querySelectorAll(".animate, .fade-left, .fade-right");
+
+window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        const screen = window.innerHeight;
+
+        if (position < screen - 100) {
+            el.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
