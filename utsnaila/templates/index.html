@@ -15,6 +15,8 @@
     <h2>Portofolio</h2>
     <ul>
         <li><a href="#about">Tentang</a></li>
+        <li><a href="#about">Pendidikan</a></li>
+        <li><a href="#about">Keahlian</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Kontak</a></li>
     </ul>
@@ -36,8 +38,10 @@
         <img src="{% static 'images/nai.jpeg' %}" class="profile">
 
         <div class="hero-text">
-            <h1>Nisa Nailassa'adah</h1>
-            <p>Mohon maaf bapak saya hanya bisa seperti ini terimakasih 🙏🏻🙏🏻🙏🏻</p>
+            <h1>Nisa Nailassa'adah
+                Mahasiswa Sains Data
+            </h1>
+            <p>Saya adalah mahasiswa Sains Data yang memiliki minat pada analisis data, machine learning, dan pengembangan aplikasi web. Saya senang mempelajari teknologi baru dan menyelesaikan masalah melalui data.</p>
         </div>
     </div>
 
@@ -49,28 +53,87 @@
 
     <div class="about-container">
         <div class="about-left">
-            <p><strong>Alamat:</strong> Ungaran Barat, Kab.Semarang</p>
-            <p><strong>Pendidikan MI:</strong> Mangunsari 02</p>
-            <p><strong>Pendiddikan MTS:</strong> Miftahul Ulum</p>
-            <p><strong>Pendidikan MA:</strong> Miftahul Ulum</p>
+            <p><strong>Nama :</strong> Nisa Nailassa'adah</p>
+            <p><strong>Tempat, Tanggal Lahir :</strong> Semarang, 4 Juli 2004</p>
+            <p><strong>Alamat :</strong> Ungaran Barat, Kab.Semarang</p>
+            <p><strong>Email :</strong> nisanailas13@gmail.com</p>
+            <p><strong>No HP :</strong> +6285640944512</p>
+            <p><strong>Hobi :</strong> Menyanyi, Mendengarkan musik</p>
         </div>
 
         <div class="about-right">
             <p>
-                Saya mahasiswa jurusan Sains Data yang tertarik pada analisis data,
-                machine learning, dan visualisasi data untuk menyelesaikan masalah nyata.
+                Saya adalah mahasiswa Program Studi Sains Data yang memiliki minat dalam bidang data science, machine learning, dan pengembangan aplikasi berbasis web. Selama kuliah saya telah mempelajari Python, Django, SQL, Data Mining, dan berbagai teknik analisis data. Saya memiliki kemampuan bekerja secara individu maupun tim serta selalu berusaha mengembangkan keterampilan yang saya miliki.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Project -->
-<section id="project" class="animate">
+<section id="education" class="education">
+    <h2>Pendidikan</h2>
+
+    <div class="edu-card">
+        <h3>MI Mangunsari 02</h3>
+        <p>2011 - 2017</p>
+    </div>
+
+    <div class="edu-card">
+        <h3>MTs Miftahul Ulum</h3>
+        <p>2018 - 2020</p>
+    </div>
+
+    <div class="edu-card">
+        <h3>MA Miftahul Ulum</h3>
+        <p>2021 - 2023</p>
+        <p>Jurusan IPS</p>
+    </div>
+
+    <div class="edu-card">
+        <h3>Universitas Islam Negri Salatiga</h3>
+        <p>2024 - Sekarang</p>
+        <p>Program Studi Sains Data</p>
+    </div>
+</section>
+
+<section id="skill" class="skill">
+    <h2>Keahlian</h2>
+
+    <p>HTML</p>
+    <progress value="50" max="100"></progress>
+
+    <p>CSS</p>
+    <progress value="55" max="100"></progress>
+
+    <p>Python</p>
+    <progress value="60" max="100"></progress>
+
+    <p>Django</p>
+    <progress value="50" max="100"></progress>
+
+    <p>MySQL</p>
+    <progress value="50" max="100"></progress>
+</section>
+
+<section id="project" class="project">
     <h2>Project</h2>
 
-    <div class="card">
-        <h3>Pengembangan Aplikasi Web Midterm Test</h3>
-        <p>Mengimplementasikan structur django dengan web profile yang menarik.</p>
+    <div class="project-container">
+
+        <div class="project-box">
+            <h3>Website CV Biodata</h3>
+            <p>Membuat website portofolio pribadi menggunakan Django, HTML, dan CSS.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Sistem Registrasi Mahasiswa</h3>
+            <p>Membuat formulir registrasi mahasiswa menggunakan Django Forms dan Bootstrap.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Analisis Data Penjualan</h3>
+            <p>Mengolah dan memvisualisasikan data menggunakan Python.</p>
+        </div>
+        
     </div>
 </section>
 
